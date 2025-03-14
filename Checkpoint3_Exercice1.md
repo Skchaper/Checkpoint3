@@ -18,10 +18,10 @@ Vérification de la création de l'utilisateur :
 
 **Q.1.1.2** Créer une OU DeactivatedUsers et déplace le compte désactivé de Kelly Rhameur dedans.
 
-Kelly Rhameur n'est plus dans l'OU DirectionDesRessourcesHumaines :  
+Kelly Rhameur n'est plus dans l'OU DirectionDesRessourcesHumaines (via glisser-déposer, plus propre en PowerShell) :  
 ![VirtualBoxVM_4P2MKjhrgm.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_4P2MKjhrgm.png)
 
-Le compte utilisateur de Kelly Rhameur est désactivé et se trouve dans l'OU DeactivatedUser :  
+Le compte utilisateur de Kelly Rhameur est désactivé (Clic droit sur l'utilisateur --> Disabled) et se trouve dans l'OU DeactivatedUser :  
 ![VirtualBoxVM_L3Ts43gB0t.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_L3Ts43gB0t.png)
 
 **Q.1.1.3** Modifier le groupe de l'OU dans laquelle était Kelly Rhameur en conséquence.
