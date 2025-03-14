@@ -14,7 +14,7 @@ Commande :
 ![VirtualBoxVM_MeK7BzpLoA.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_MeK7BzpLoA.png)  
 
 Vérification de la création de l'utilisateur :
-![]()
+![VirtualBoxVM_TmuuUwmDZF.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_TmuuUwmDZF.png)
 
 **Q.1.1.2** Créer une OU DeactivatedUsers et déplace le compte désactivé de Kelly Rhameur dedans.
 
