@@ -91,3 +91,11 @@ Une fois validée et configurée, la politique de mot de passe apparaît dans l'
 
 **Q.1.3.1** Créer une GPO Drive-Mount qui monte les lecteurs E: et F: sur les clients.
 
+Dans un premier temps, il faut accéder au **Group Policy Management** disponible dans le menu **Tools** :  
+![VirtualBoxVM_RIVgxvD7d1.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_RIVgxvD7d1.png)
+
+Une fois au bon endroit, créer une nouvelle GPO sous **Group Policy Objects** et la nommer pour l'identification de celle-ci :  
+![VirtualBoxVM_XPMfkjSvzv.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_XPMfkjSvzv.png)
+
+Pour configurer la GPO, clic droit sur la nouvelle GPO puis clic gauche sur **Edit**,  :  
+![]()
