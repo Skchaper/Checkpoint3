@@ -83,6 +83,9 @@ Cliquer sur **New** puis **Password settings** :
 Définir les paramètres au besoin dans le cas de l'exercice, la configuration est la suivante :    
 ![VirtualBoxVM_Vz3HQ4pUb6.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_Vz3HQ4pUb6.png)
 
+Une fois validée et configurée, la politique de mot de passe apparaît dans l'onglet **Password Settings Container**.
+![VirtualBoxVM_YosKK9aTMO.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_YosKK9aTMO.png)
+
 
 ## Partie 3 : Lecteurs réseaux
 
