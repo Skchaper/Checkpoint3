@@ -1,4 +1,4 @@
-<div align="center"><H1> Checkpoint3 </H1></div>
+<div align="center"><H1> Checkpoint3_Exercice1 </H1></div>
 
 Exercice 1 : Manipulations pratiques sur VM Windows (temps estimé : 1h30)
 
