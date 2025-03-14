@@ -103,5 +103,7 @@ Pour configurer la GPO, clic droit sur la nouvelle GPO puis clic gauche sur **Ed
 Dans le nouveau menu, clic droit : **New > Mapped Drive** :  
 ![VirtualBoxVM_t4DbMV2Cvk.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_t4DbMV2Cvk.png)
 
-
+Partager un lecteur :
+Clic droit sur le lecteur souhaité, **Properties**, une fois dans les propriétés, aller dans **Sharing** puis dans **Advanced Sharing**, enfin cocher **Share this folder**, valider, le disque est partagé sur le réseau :  
+![VirtualBoxVM_0JdzP4CAFJ.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_0JdzP4CAFJ.png)
 
