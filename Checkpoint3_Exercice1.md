@@ -26,6 +26,9 @@ Le compte utilisateur de Kelly Rhameur est désactivé et se trouve dans l'OU De
 
 **Q.1.1.3** Modifier le groupe de l'OU dans laquelle était Kelly Rhameur en conséquence.
 
+L'utilisateur désactivé de Kelly Rhameur a été retiré du groupe de l'OU et Lionel y a été ajouté à la place :  
+![VirtualBoxVM_gVhLh7ot3m.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_gVhLh7ot3m.png)
+
 **Q.1.1.4** Créer le dossier Individuel du nouvel utilisateur et archive celui de Kelly Rhameur en le suffixant par -ARCHIVE.
 
 
