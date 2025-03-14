@@ -100,7 +100,8 @@ Une fois au bon endroit, créer une nouvelle GPO sous **Group Policy Objects** e
 Pour configurer la GPO, clic droit sur la nouvelle GPO puis clic gauche sur **Edit**, puis parcourir l'arborescence : **User Configuration > Preferences > Windows Settings > Drive Maps** :  
 ![VirtualBoxVM_eoY1OpqFmv.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_eoY1OpqFmv.png)
 
-
+Dans le nouveau menu, clic droit : **New > Mapped Drive** :  
+![VirtualBoxVM_t4DbMV2Cvk.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_t4DbMV2Cvk.png)
 
 
 
