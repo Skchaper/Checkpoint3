@@ -50,7 +50,7 @@ Le dossier de Lionel Lemarchand est bien existant et le dossier de Kelly Rhameur
 Tout d'abord, rendez-vous dans le menu propriétés de l'utilisateur Gabriel Guhl. Cliquer sur **Account**, puis sur **Logon Hours...**, un nouveau menu s'ouvre :  
 ![VirtualBoxVM_qeHvx2lGtx.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_qeHvx2lGtx.png)
 
-Ensuite, il faut définir la plage comme on le souhaite, on sélectionne les heures où la connexion ne sera pas permise et on coche **Logon Denied** :  
+Ensuite, il faut définir la plage souhaiter, on sélectionne les heures où la connexion ne sera pas permise et on coche **Logon Denied** :  
 ![VirtualBoxVM_FV46UyiZcl.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_FV46UyiZcl.png)
 
 Une fois la configuration validée, la connexion de l'utilisateur est bien limitée.
