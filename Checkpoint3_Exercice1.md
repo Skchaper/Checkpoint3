@@ -47,6 +47,15 @@ Le dossier de Lionel Lemarchand est bien existant et le dossier de Kelly Rhameur
 
 **Q.1.2.1** Faire en sorte que l'utilisateur Gabriel Ghul ne puisse se connecter que du lundi au vendredi, de 7h à 17h.
 
+Tout d'abord, rendez-vous dans le menu propriétés de l'utilisateur Gabriel Guhl. Cliquer sur **Account**, puis sur **Logon Hours...**, un nouveau menu s'ouvre :  
+![VirtualBoxVM_qeHvx2lGtx.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_qeHvx2lGtx.png)
+
+Ensuite, il faut définir la plage comme on le souhaite, on sélectionne les heures où la connexion ne sera pas permise et on coche **Logon Denied** :  
+![VirtualBoxVM_FV46UyiZcl.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_FV46UyiZcl.png)
+
+Une fois la configuration validée, la connexion de l'utilisateur est bien limitée.
+
+
 **Q.1.2.2** De même, bloquer sa connexion au seul ordinateur CLIENT01.
 
 **Q.1.2.3** Mettre en place une stratégie de mot de passe pour durcir les comptes des utilisateurs de l'OU LabUsers.
