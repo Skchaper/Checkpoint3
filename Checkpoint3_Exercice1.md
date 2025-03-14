@@ -68,6 +68,24 @@ Une fois validé, l'utilisateur Gabriel Guhl pourra se connecter uniquement à l
 
 **Q.1.2.3** Mettre en place une stratégie de mot de passe pour durcir les comptes des utilisateurs de l'OU LabUsers.
 
+Dans la barre de recherche Windows taper **dsac.exe**, une nouvelle fenêtre s'ouvre :  
+![VirtualBoxVM_O3tp68oVcA.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_O3tp68oVcA.png)
+
+Sélectionner le domaine : **TSSR (local)**, puis **System** :  
+![VirtualBoxVM_V8lL5j6N41.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_V8lL5j6N41.png)
+
+Et enfin **PasswordSettings Container** :  
+![VirtualBoxVM_u8tXSTRwNV.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_u8tXSTRwNV.png)
+
+Cliquer sur **New** puis **Password settings** :  
+![VirtualBoxVM_q0EuYjyt58.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_q0EuYjyt58.png)
+
+Définir les paramètres au besoin dans le cas de l'exercice, la configuration est la suivante :    
+![]()
+
+
+
+
 
 ## Partie 3 : Lecteurs réseaux
 
