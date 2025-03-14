@@ -7,7 +7,11 @@ L'utilisateur Kelly Rhameur a quitté l'entreprise.
 Elle est remplacée par Lionel Lemarchand
 
 **Q.1.1.1** Créer l'utilisateur Lionel Lemarchand avec les même attribut de société que Kelly Rhameur.  
-![VirtualBoxVM_MeK7BzpLoA.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_MeK7BzpLoA.png)
+Commande :  
+New-ADUser -Name "Lionel.Lemarchand" -GivenName "Lionel" -Surname "Lemarchand" -SamAccountName "Lionel.Lemarchand" -Path "OU=DirectionDesRessourcesHumaines,OU=LabUsers,DC=TSSR,DC=LAN" -AccountPassord(Read-Host -AsSecureString "Mot de passe ?") -ChangePasswordAtLogon $true -Enabled $true  
+![VirtualBoxVM_MeK7BzpLoA.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_MeK7BzpLoA.png)  
+
+Vérification de la création de l'utilisateur :
 ![]()
 
 **Q.1.1.2** Créer une OU DeactivatedUsers et déplace le compte désactivé de Kelly Rhameur dedans.
