@@ -4,7 +4,13 @@
 
 ## Partie 1 : Gestion des utilisateurs
 
-**Q.2.1.1** Sur le serveur, créer un compte pour ton usage personnel.
+**Q.2.1.1** Sur le serveur, créer un compte pour ton usage personnel.  
+
+```
+Création de l'utilisateur : useradd skchaper
+Création du mot de passe utilisateur : passwd skchaper
+Renseigner le mot de passe / répéter le mot de passeskchaper
+```
 
 **Q.2.1.2** Quelles préconisations proposes-tu concernant ce compte ?
 
@@ -13,6 +19,18 @@ Un serveur SSH est lancé sur le port par défaut.
 Il est possible de s'y connecter avec n'importe quel compte, y compris le compte root.
 
 **Q.2.2.1** Désactiver complètement l'accès à distance de l'utilisateur root.
+
+Editer le fichier sshd_config à l'emplacement /etc/ssh/sshd_config :
+```
+nano /etc/ssh/sshd_config
+```
+
+Trouver la ligne PermitRootLogin et indiquer le texte suivant :
+```
+PermitRootLogin no #disabled
+```
+
+![vmware_icpbjcdQ5T.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_icpbjcdQ5T.png)
 
 **Q.2.2.2** Autoriser l'accès à distance à ton compte personnel uniquement.
 
