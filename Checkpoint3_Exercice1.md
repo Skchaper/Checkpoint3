@@ -33,6 +33,15 @@ L'utilisateur désactivé de Kelly Rhameur a été retiré du groupe de l'OU et 
 
 **Q.1.1.4** Créer le dossier Individuel du nouvel utilisateur et archive celui de Kelly Rhameur en le suffixant par -ARCHIVE.
 
+Création du dossier Individuel du nouvel utilisateur :  
+- Aller dans le disque DossiersIndividuels (F:), clic droit --> New --> Folder --> Nommer le dossier (ici : lionel.lemarchand)  
+
+Archivage du dossier Individuel de l'ancien utilisateur :  
+- Toujours dans le disque DossiersIndividuels (F:), clic droit --> Send to... --> Compressed (zipped) folder  
+
+Le dossier de Lionel Lemarchand est bien existant et le dossier de Kelly Rhameur est bien archivé :  
+![VirtualBoxVM_J8yXmacxDy.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_J8yXmacxDy.png)
+
 
 ## Partie 2 : Restriction utilisateurs
 
