@@ -81,7 +81,7 @@ Cliquer sur **New** puis **Password settings** :
 ![VirtualBoxVM_q0EuYjyt58.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_q0EuYjyt58.png)
 
 Définir les paramètres au besoin dans le cas de l'exercice, la configuration est la suivante :    
-![VirtualBoxVM_igDjUbfgZ4.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_igDjUbfgZ4.png)
+![VirtualBoxVM_Vz3HQ4pUb6.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_Vz3HQ4pUb6.png)
 
 
 ## Partie 3 : Lecteurs réseaux
