@@ -6,11 +6,13 @@
 
 **Q.2.1.1** Sur le serveur, créer un compte pour ton usage personnel.  
 
+Création de l'utilisateur :  
 ```
-Création de l'utilisateur : useradd skchaper
-Création du mot de passe utilisateur : passwd skchaper
-Renseigner le mot de passe / répéter le mot de passeskchaper
+adduser skchaper
 ```
+
+Renseigner les informations demandées dont le mot de passe et voilà, le compte utilisateur est créée.
+
 
 **Q.2.1.2** Quelles préconisations proposes-tu concernant ce compte ?
 
