@@ -58,6 +58,14 @@ Une fois la configuration validée, la connexion de l'utilisateur est bien limit
 
 **Q.1.2.2** De même, bloquer sa connexion au seul ordinateur CLIENT01.
 
+Rendez-vous dans le menu propriétés de l'utilisateur Gabriel Guhl. Cliquer sur **Account**, puis sur **Log On To...**, un nouveau menu s'ouvre :
+![VirtualBoxVM_pVndSedbyy.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_pVndSedbyy.png)
+
+Ensuite, il faut cocher la case **The following computers**, puis renseigner le nom de l'ordinateur sur lequel autoriser l'utilisateur à se connecter :  
+![VirtualBoxVM_PVPtS209s9.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_PVPtS209s9.png)
+
+Une fois validé, l'utilisateur Gabriel Guhl pourra se connecter uniquement à l'ordinateur "CLIENT01".
+
 **Q.1.2.3** Mettre en place une stratégie de mot de passe pour durcir les comptes des utilisateurs de l'OU LabUsers.
 
 
