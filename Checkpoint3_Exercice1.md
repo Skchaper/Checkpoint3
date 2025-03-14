@@ -94,6 +94,10 @@ Une fois validée et configurée, la politique de mot de passe apparaît dans l'
 Dans un premier temps, il faut accéder au **Group Policy Management** disponible dans le menu **Tools** :  
 ![VirtualBoxVM_RIVgxvD7d1.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_RIVgxvD7d1.png)
 
+Partager un lecteur :
+Clic droit sur le lecteur souhaité, **Properties**, une fois dans les propriétés, aller dans **Sharing** puis dans **Advanced Sharing**, enfin cocher **Share this folder**, valider, le disque est partagé sur le réseau :  
+![VirtualBoxVM_0JdzP4CAFJ.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_0JdzP4CAFJ.png)
+
 Une fois au bon endroit, créer une nouvelle GPO sous **Group Policy Objects** et la nommer pour l'identification de celle-ci :  
 ![VirtualBoxVM_XPMfkjSvzv.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_XPMfkjSvzv.png)
 
@@ -103,7 +107,6 @@ Pour configurer la GPO, clic droit sur la nouvelle GPO puis clic gauche sur **Ed
 Dans le nouveau menu, clic droit : **New > Mapped Drive** :  
 ![VirtualBoxVM_t4DbMV2Cvk.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_t4DbMV2Cvk.png)
 
-Partager un lecteur :
-Clic droit sur le lecteur souhaité, **Properties**, une fois dans les propriétés, aller dans **Sharing** puis dans **Advanced Sharing**, enfin cocher **Share this folder**, valider, le disque est partagé sur le réseau :  
-![VirtualBoxVM_0JdzP4CAFJ.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_0JdzP4CAFJ.png)
+Dans ce nouveau menu, rensigner les informations requises :  
+![VirtualBoxVM_A7z2b8nTVl.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_A7z2b8nTVl.png)
 
