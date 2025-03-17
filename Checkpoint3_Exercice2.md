@@ -57,6 +57,18 @@ AllowUsers skchaper
 
 **Q.2.2.3** Mettre en place une authentification par clé valide et désactiver l'authentification par mot de passe
 
+Génération d'une clé RSA de 4096 bits :  
+```
+ssh-keygen -b 4096
+```
+
+![vmware_3oPT0OGfqy.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_3oPT0OGfqy.png)
+
+Les clés apparaissent dans le répertoire ".ssh" de l'utilisateur :  
+
+![vmware_4zyBza72Oh.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_4zyBza72Oh.png)
+
+
 ## Partie 3 : Analyse du stockage
 
 **Q.2.3.1** Quels sont les systèmes de fichiers actuellement montés ?
