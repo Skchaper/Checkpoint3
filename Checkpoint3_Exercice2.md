@@ -57,17 +57,23 @@ AllowUsers skchaper
 
 **Q.2.2.3** Mettre en place une authentification par clé valide et désactiver l'authentification par mot de passe
 
-Génération d'une clé RSA de 4096 bits :  
+Editer le fichier sshd_config à l'emplacement /etc/ssh/sshd_config :  
 ```
-ssh-keygen -b 4096
+nano /etc/ssh/sshd_config
 ```
 
-![vmware_3oPT0OGfqy.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_3oPT0OGfqy.png)
+Pour désactiver l'authentification par mot de passe, trouver et modifier les lignes suivantes :  
+```
+PasswordAuthentification no
+ChallengeResponseAuthentication no
+UsePAM no
+```
 
-Les clés apparaissent dans le répertoire ".ssh" de l'utilisateur :  
+![vmware_Sxl1S2gVUm.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_Sxl1S2gVUm.png)
 
-![vmware_4zyBza72Oh.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_4zyBza72Oh.png)
+Pour activer l'authentification par clef ssh, trouver et modifier la ligne suivante :  
 
+![]()
 
 ## Partie 3 : Analyse du stockage
 
