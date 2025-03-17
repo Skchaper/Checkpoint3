@@ -39,6 +39,18 @@ PermitRootLogin no #disabled
 
 **Q.2.2.2** Autoriser l'accès à distance à ton compte personnel uniquement.
 
+Editer le fichier sshd_config à l'emplacement /etc/ssh/sshd_config :  
+```
+nano /etc/ssh/sshd_config
+```
+
+Ajouter la ligne suivante :  
+```
+AllowUsers skchaper
+```
+  
+![vmware_jyIpp3bT2A.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_jyIpp3bT2A.png)
+
 **Q.2.2.3** Mettre en place une authentification par clé valide et désactiver l'authentification par mot de passe
 
 ## Partie 3 : Analyse du stockage
