@@ -56,6 +56,16 @@ Les composants bareos-dir, bareos-sd et bareos-fd sont installés avec une confi
 
 **Q.2.4.1** Expliquer succinctement les rôles respectifs des 3 composants bareos installés sur la VM.
 
+**Bareos Director :**
+Il est responsable de la planification, du contrôle et du lancement des tâches de sauvegardes. Il contrôle l'ensemble des autres composants. Il est installé sur le serveur en charge de la gestion des sauvegardes.  
+
+**Bareos File Daemon :**  
+Ce composant est installé sur chaque machine devant être sauvegardée. Il est en charge de collecter les informations à sauvegarder et de les envoyer au Bareos Storage Daemon.
+
+**Bareos Storage Daemon :**  
+Bareos permet d'effectuer des sauvegardes sur différents types de supports (bandes magnétiques, disques, stockage distant...). L'écriture sur ces supports est effectué par un Storage Daemon.  
+
+
 ## Partie 5 : Filtrage et analyse réseau
 
 **Q.2.5.1** Quelles sont actuellement les règles appliquées sur Netfilter ?
