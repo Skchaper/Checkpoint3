@@ -113,5 +113,5 @@ Dans ce nouveau menu, rensigner les informations requises :
 Une fois la configuration terminée, le mappage apparaît :
 [VirtualBoxVM_0aKPqYnvyu.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_0aKPqYnvyu.png)
 
-Il faut penser à lier la nouvelle GPO à l'OU concernée, ici LabUsers.
+Il faut penser à lier la nouvelle GPO à l'OU contenant le ou les utilisateurs concernés, ici LabUsers.
 
