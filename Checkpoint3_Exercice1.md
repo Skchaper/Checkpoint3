@@ -110,8 +110,8 @@ Dans le nouveau menu, clic droit : **New > Mapped Drive** :
 Dans ce nouveau menu, rensigner les informations requises :  
 ![VirtualBoxVM_A7z2b8nTVl.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_A7z2b8nTVl.png)
 
-Le triagnle vert indique que le mappage est un succès :  
-![VirtualBoxVM_0aKPqYnvyu.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_0aKPqYnvyu.png)
+Une fois la configuration terminée, le mappage apparaît :
+[VirtualBoxVM_0aKPqYnvyu.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_0aKPqYnvyu.png)
 
 Il faut penser à lier la nouvelle GPO à l'OU concernée, ici LabUsers.
 
