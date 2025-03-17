@@ -73,7 +73,40 @@ UsePAM no
 
 Pour activer l'authentification par clef ssh, trouver et modifier la ligne suivante :  
 
+```
+PubkeyAuthentification yes
+```
+
 ![vmware_ww0uAT8CJ6.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_ww0uAT8CJ6.png)
+
+Génération d'une clé RSA de 4096 bits :  
+```
+ssh-keygen -b 4096
+```
+
+![vmware_3oPT0OGfqy.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_3oPT0OGfqy.png)
+
+Les clés apparaissent dans le répertoire ".ssh" de l'utilisateur :  
+
+![vmware_4zyBza72Oh.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_4zyBza72Oh.png)
+
+Copier la clé publique pour activer le SSH sans mot de passe (Méthode : commande ssh-copy-id) :  
+
+```
+ssh-copy-id utilisateur_distant@adresse_IP_distante
+```
+
+Redémarrage du service ssh :  
+
+```
+sudo systemctl restart sshd
+```
+
+Tester la connexion ssh sans mot de passe :  
+
+```
+ssh utilisateur_distant@adresse_IP_distante
+```
 
 ## Partie 3 : Analyse du stockage
 
