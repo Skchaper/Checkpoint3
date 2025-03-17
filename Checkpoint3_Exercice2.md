@@ -13,6 +13,10 @@ adduser skchaper
 
 Renseigner les informations demandées dont le mot de passe.
 
+Ajouter le nouvel utilisateur au groupe sudo pour lui donner les droits administrateur :  
+```
+usermod -aG sudo skchaper
+```
 
 **Q.2.1.2** Quelles préconisations proposes-tu concernant ce compte ?
 
