@@ -110,15 +110,60 @@ ssh utilisateur_distant@adresse_IP_distante
 
 ## Partie 3 : Analyse du stockage
 
-**Q.2.3.1** Quels sont les systèmes de fichiers actuellement montés ?
+**Q.2.3.1** Quels sont les systèmes de fichiers actuellement montés ?  
+
+Consulter les informations dans le fichier /etc/fstab :  
+
+```
+nano /etc/fstab
+```
+
+Le disque **/dev/sda1** utilise un système de fichier **linux_**.  
+
+La partition **md0p1** utilise un système de fichier **ext2**.  
+
+La partition **md0p5** utilise un système de fichier **LVM2_m**.  
+
+La partition **cp3--vg-root** sous md0p5 utilise un système de fichier **ext4**.  
+
+![vmware_iwmYjILTRv.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_iwmYjILTRv.png)
+
+La commande ```lsblk -f``` permet également de vérifier ces informations :  
+
+![vmware_xmvIrYwTlG.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_xmvIrYwTlG.png)
 
 **Q.2.3.2** Quel type de système de stockage ils utilisent ?
 
+Consulter les informations sur le type de système de stockage :  
+```
+fdisk -l
+```
+
+**/dev/sda1** utilise le type de système de stockage **RAID Linux**.  
+**md0p1** utilise le type de système de stockage **Linux**.  
+**md0p5** utilise le type de système de stockage **LVM Linux**.  
+
+![vmware_sjSNNrcg0E.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_sjSNNrcg0E.png)
+
 **Q.2.3.3** Ajouter un nouveau disque de 8,00 Gio au serveur et réparer le volume RAID
+
+Ajout d'un nouveau disque de 8,00 Gio :  
+
+
+
+Réparer le volume RAID :  
+
+
 
 **Q.2.3.4** Ajouter un nouveau volume logique LVM de 2 Gio qui servira à héberger des sauvegardes. Ce volume doit être monté automatiquement à chaque démarrage dans l'emplacement par défaut : /var/lib/bareos/storage.
 
+
+
+
 **Q.2.3.5** Combien d'espace disponible reste-t-il dans le groupe de volume ?
+
+
+
 
 ## Partie 4 : Sauvegardes
 Le logiciel bareos est installé sur le serveur.
