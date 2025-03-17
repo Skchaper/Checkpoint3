@@ -73,7 +73,7 @@ UsePAM no
 
 Pour activer l'authentification par clef ssh, trouver et modifier la ligne suivante :  
 
-![]()
+![vmware_ww0uAT8CJ6.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_ww0uAT8CJ6.png)
 
 ## Partie 3 : Analyse du stockage
 
