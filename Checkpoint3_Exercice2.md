@@ -11,10 +11,13 @@ Création de l'utilisateur :
 adduser skchaper
 ```
 
-Renseigner les informations demandées dont le mot de passe et voilà, le compte utilisateur est créée.
+Renseigner les informations demandées dont le mot de passe.
 
 
 **Q.2.1.2** Quelles préconisations proposes-tu concernant ce compte ?
+
+?????
+
 
 ## Partie 2 : Configuration de SSH
 Un serveur SSH est lancé sur le port par défaut.
