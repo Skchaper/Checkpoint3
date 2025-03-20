@@ -305,13 +305,15 @@ Le résultat de la commande indique qu'il n'existe aucune table et donc aucune r
 
 **Q.2.5.2** Quels types de communications sont autorisées ?  
 
+En l'absence de table et de règle. La règle par défaut de Netfilter s'applique et laisse passer tout le traffic.  
 
 **Q.2.5.3** Quels types sont interdit ?  
 
+Aucun type n'est interdit.  
 
 **Q.2.5.4** Sur nftables, ajouter les règles nécessaires pour autoriser bareos à communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.  
 
-
+????
 
 
 ## Partie 6 : Analyse de logs
