@@ -167,11 +167,13 @@ Ajouter une nouvelle partition (avec n) et créer une partition primaire (avec p
 
 ![vmware_Q0HphtnNvo.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_Q0HphtnNvo.png)
 
-Ensuite, modifier le type de la partition (avec t) en RAID Linux auto.  
-
-Toujours dans l'utilitaire, taper **L** pour obtenir la liste des différents types de partition, dans le cas d'une partition de type RAID Linux auto, taper **fd** :  
+Toujours dans l'utilitaire, modifier le type de la partition (avec t) en RAID Linux auto. Ensuite, taper **L** pour obtenir la liste des différents types de partition, dans le cas d'une partition de type RAID Linux auto, taper **fd** :  
 
 ![vmware_4SIwHiMqzJ.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_4SIwHiMqzJ.png)
+
+Enfin taper **w** pour quitter et sauvegarder les modifications. Avec la commande **lsblk** vérifier que le disque est bien partitionné :  
+
+![vmware_3wksxgL12c.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_3wksxgL12c.png)
 
 
 
