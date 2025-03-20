@@ -89,12 +89,12 @@ Une fois validée et configurée, la politique de mot de passe apparaît dans l'
 
 ## Partie 3 : Lecteurs réseaux
 
-**Q.1.3.1** Créer une GPO Drive-Mount qui monte les lecteurs E: et F: sur les clients.
+**Q.1.3.1** Créer une GPO Drive-Mount qui monte les lecteurs E: et F: sur les clients.  
 
 Dans un premier temps, il faut accéder au **Group Policy Management** disponible dans le menu **Tools** :  
 ![VirtualBoxVM_RIVgxvD7d1.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_RIVgxvD7d1.png)
 
-Partager un lecteur :
+Partager un lecteur :  
 Clic droit sur le lecteur souhaité, **Properties**, une fois dans les propriétés, aller dans **Sharing** puis dans **Advanced Sharing**, enfin cocher **Share this folder**, valider, le disque est partagé sur le réseau :  
 ![VirtualBoxVM_0JdzP4CAFJ.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_0JdzP4CAFJ.png)
 
@@ -110,7 +110,7 @@ Dans le nouveau menu, clic droit : **New > Mapped Drive** :
 Dans ce nouveau menu, rensigner les informations requises :  
 ![VirtualBoxVM_A7z2b8nTVl.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_A7z2b8nTVl.png)
 
-Une fois la configuration terminée, le mappage apparaît :
+Une fois la configuration terminée, le mappage apparaît :  
 ![VirtualBoxVM_0aKPqYnvyu.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO1/VirtualBoxVM_0aKPqYnvyu.png)
 
 Il faut penser à lier la nouvelle GPO à l'OU contenant le ou les utilisateurs concernés, ici LabUsers.
