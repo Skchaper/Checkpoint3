@@ -274,7 +274,7 @@ et ajouter la ligne : /dev/mvg/Vol1 /var/lib/bareos/storage ext4 defaults 0 0
 
 **Q.2.3.5** Combien d'espace disponible reste-t-il dans le groupe de volume ?
 
-Dans mon cas après la pratique il ne reste pas d'espace de stockage, si le volume logique avait était ajouté au groupe de volume existant, il resterait environ 5,5 GiB sur les 7,5.  
+Dans mon cas après la pratique il ne reste pas d'espace de stockage, si le volume logique avait était ajouté au groupe de volume existant, il resterait environ 5,5 GiB sur les 7,5GiB.  
 
 ## Partie 4 : Sauvegardes
 Le logiciel bareos est installé sur le serveur.  
