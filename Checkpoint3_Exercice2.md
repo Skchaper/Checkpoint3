@@ -293,16 +293,32 @@ Bareos permet d'effectuer des sauvegardes sur différents types de supports (ban
 
 ## Partie 5 : Filtrage et analyse réseau
 
-**Q.2.5.1** Quelles sont actuellement les règles appliquées sur Netfilter ?
+**Q.2.5.1** Quelles sont actuellement les règles appliquées sur Netfilter ?  
 
-**Q.2.5.2** Quels types de communications sont autorisées ?
+```
+nft list tables
+```
 
-**Q.2.5.3** Quels types sont interdit ?
+![vmware_heLRg2ahUK.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_heLRg2ahUK.png)
 
-**Q.2.5.4** Sur nftables, ajouter les règles nécessaires pour autoriser bareos à communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.
+Le résultat de la commande indique qu'il n'existe aucune table et donc aucune règle appliquée à Netfilter.  
 
-Partie 6 : Analyse de logs
-Q.2.6.1 Lister les 10 derniers échecs de connexion ayant eu lieu sur le serveur en indiquant pour chacun :
+**Q.2.5.2** Quels types de communications sont autorisées ?  
 
-La date et l'heure de la tentative
-L'adresse IP de la machine ayant fait la tentative
+
+**Q.2.5.3** Quels types sont interdit ?  
+
+
+**Q.2.5.4** Sur nftables, ajouter les règles nécessaires pour autoriser bareos à communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.  
+
+
+
+
+## Partie 6 : Analyse de logs
+
+**Q.2.6.1** Lister les 10 derniers échecs de connexion ayant eu lieu sur le serveur en indiquant pour chacun :  
+
+La date et l'heure de la tentative  
+L'adresse IP de la machine ayant fait la tentative  
+
+fail
