@@ -204,6 +204,25 @@ Une fois l'opération terminée, le raid est bien réparé :
 
 **Q.2.3.4** Ajouter un nouveau volume logique LVM de 2 Gio qui servira à héberger des sauvegardes. Ce volume doit être monté automatiquement à chaque démarrage dans l'emplacement par défaut : /var/lib/bareos/storage.
 
+Vérification de l'ajout d'un nouveau disque de 2,00 Gio, taper la commande suivante :  
+
+```
+lsblk
+```
+
+![vmware_lOYODT9yEM.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_lOYODT9yEM.png)
+
+Créer la partition **sdc1** sur le disque **sdc** avec la méthode vue précédemment pour le partitionnement du disque **/dev/sdb** en choisissant le type de partition **Linux LVM** :  
+
+![vmware_xwYnvWGOCX.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_xwYnvWGOCX.png)
+
+
+
+
+Modification du fichier de configuration **** pour le montage automatique du nouveau volume au démarrage dans l'emplacement par défaut : /var/lib/bareos/storage :  
+
+![]()
+
 
 
 
