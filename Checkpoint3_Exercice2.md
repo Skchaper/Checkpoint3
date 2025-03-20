@@ -323,4 +323,17 @@ Aucun type n'est interdit.
 La date et l'heure de la tentative  
 L'adresse IP de la machine ayant fait la tentative  
 
-fail
+mm:dd:hh ip
+
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+
+Rien dans le fichier /var/log/atuh.log, rien dans les fichiers logs bareos présents dans le dossier /var/log/bareos/... .
