@@ -232,23 +232,53 @@ vgcreate mvg /dev/sdc1
 
 ![vmware_2oDotDibFx.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_2oDotDibFx.png)
 
+Avec la commande ci-dessous, vérifier l'apparition du groupe de volume :  
 
+```
+vgdisplay mvg
+```
 
-Modification du fichier de configuration **** pour le montage automatique du nouveau volume au démarrage dans l'emplacement par défaut : /var/lib/bareos/storage :  
+![vmware_avnneYMp6d.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_avnneYMp6d.png)
 
-![]()
+Créer le volume logique :  
 
+```
+lvcreate -n Vol1 -L 1,9g mvg
+```
 
+lvcreate -n <nom du volume logique> -L <taille du volume logique> <nom du groupe de volume>
 
+![vmware_COUn2W4sj3.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_COUn2W4sj3.png)
+
+Monter le volume logique :  
+
+```
+mkfs -t ext4 /dev/mvg/Vol1
+```
+
+```
+mount /dev/mvg/Vol1 /var/lib/bareos/storage
+```
+
+![vmware_PkhNpgAxTg.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_PkhNpgAxTg.png)
+
+Modification du fichier de configuration **/etc/fstab** pour le montage automatique du nouveau volume au démarrage dans l'emplacement par défaut : /var/lib/bareos/storage :  
+
+```
+nano /etc/fstab
+```
+
+et ajouter la ligne : /dev/mvg/Vol1 /var/lib/bareos/storage ext4 defaults 0 0
+
+![vmware_JeButi8Bi1.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_JeButi8Bi1.png)
 
 **Q.2.3.5** Combien d'espace disponible reste-t-il dans le groupe de volume ?
 
-
-
+Dans mon cas après la pratique il ne reste pas d'espace de stockage, si le volume logique avait était ajouté au groupe de volume existant, il resterait environ 5,5 GiB sur les 7,5.  
 
 ## Partie 4 : Sauvegardes
-Le logiciel bareos est installé sur le serveur.
-Les composants bareos-dir, bareos-sd et bareos-fd sont installés avec une configuration par défaut.
+Le logiciel bareos est installé sur le serveur.  
+Les composants bareos-dir, bareos-sd et bareos-fd sont installés avec une configuration par défaut.  
 
 **Q.2.4.1** Expliquer succinctement les rôles respectifs des 3 composants bareos installés sur la VM.
 
@@ -256,11 +286,10 @@ Les composants bareos-dir, bareos-sd et bareos-fd sont installés avec une confi
 Il est responsable de la planification, du contrôle et du lancement des tâches de sauvegardes. Il contrôle l'ensemble des autres composants. Il est installé sur le serveur en charge de la gestion des sauvegardes.  
 
 **Bareos File Daemon :**  
-Ce composant est installé sur chaque machine devant être sauvegardée. Il est en charge de collecter les informations à sauvegarder et de les envoyer au Bareos Storage Daemon.
+Ce composant est installé sur chaque machine devant être sauvegardée. Il est en charge de collecter les informations à sauvegarder et de les envoyer au Bareos Storage Daemon.  
 
 **Bareos Storage Daemon :**  
 Bareos permet d'effectuer des sauvegardes sur différents types de supports (bandes magnétiques, disques, stockage distant...). L'écriture sur ces supports est effectué par un Storage Daemon.  
-
 
 ## Partie 5 : Filtrage et analyse réseau
 
