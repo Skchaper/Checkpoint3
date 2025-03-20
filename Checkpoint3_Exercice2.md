@@ -157,7 +157,7 @@ lsblk
 
 **Réparer le volume RAID :**  
 
-Partitionnement du nouveau disque sdb1 :  
+Partitionnement du nouveau disque **sdb** :  
 
 ```
 fdisk /dev/sdb
@@ -174,6 +174,29 @@ Toujours dans l'utilitaire, modifier le type de la partition (avec t) en RAID Li
 Enfin taper **w** pour quitter et sauvegarder les modifications. Avec la commande **lsblk** vérifier que le disque est bien partitionné :  
 
 ![vmware_3wksxgL12c.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_3wksxgL12c.png)
+
+Vérifier l'état du RAID, il faut aller voir le contenu du fichier **mdstat** :  
+
+```
+cat /proc/mdstat
+```
+
+![vmware_Mw4twHrraM.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_Mw4twHrraM.png)
+
+La commande **mdadm --detail <nom du raid>** permet d'obtenir plus de détails concernant l'état du RAID :  
+
+![vmware_BJDAHs1gxe.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_BJDAHs1gxe.png)
+
+Le résultat de la commande donne un RAID 1 actif **md0** avec uniquement la partition **sda1**. Il va falloir y ajouter la nouvelle partition **sdb1**. Pour se faire :  
+
+```
+mdadm --manage /dev/md0 --add /dev/sdb1
+```
+
+Puis consulter l'avancement dans le fichier **/proc/mdstat** :  
+
+![vmware_6cPAiedBMI.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_6cPAiedBMI.png)
+
 
 
 
