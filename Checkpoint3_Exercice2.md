@@ -216,6 +216,21 @@ Créer la partition **sdc1** sur le disque **sdc** avec la méthode vue précéd
 
 ![vmware_xwYnvWGOCX.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_xwYnvWGOCX.png)
 
+Initier le volume physique par la commande :
+
+```
+pvcreate /dev/sdc1
+```
+
+![vmware_2Kt6MlX9D2.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_2Kt6MlX9D2.png)
+
+Créer le groupe de volume, en lui renseignant un nom et le volume physique utilisé :  
+
+```
+vgcreate mvg /dev/sdc1
+```
+
+![vmware_2oDotDibFx.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_2oDotDibFx.png)
 
 
 
