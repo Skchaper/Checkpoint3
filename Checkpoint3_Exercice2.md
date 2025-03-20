@@ -197,7 +197,9 @@ Puis consulter l'avancement dans le fichier **/proc/mdstat** :
 
 ![vmware_6cPAiedBMI.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_6cPAiedBMI.png)
 
+Une fois l'opération terminée, le raid est bien réparé :  
 
+![vmware_mPqNIzBhah.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_mPqNIzBhah.png)
 
 
 **Q.2.3.4** Ajouter un nouveau volume logique LVM de 2 Gio qui servira à héberger des sauvegardes. Ce volume doit être monté automatiquement à chaque démarrage dans l'emplacement par défaut : /var/lib/bareos/storage.
