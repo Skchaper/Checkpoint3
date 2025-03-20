@@ -147,11 +147,31 @@ fdisk -l
 
 **Q.2.3.3** Ajouter un nouveau disque de 8,00 Gio au serveur et réparer le volume RAID
 
-Ajout d'un nouveau disque de 8,00 Gio :  
+Vérification de l'ajout d'un nouveau disque de 8,00 Gio, taper la commande suivante :  
 
+```
+lsblk
+```
 
+![vmware_warWnkXyLJ.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_warWnkXyLJ.png)
 
-Réparer le volume RAID :  
+**Réparer le volume RAID :**  
+
+Partitionnement du nouveau disque sdb1 :  
+
+```
+fdisk /dev/sdb
+```
+
+Ajouter une nouvelle partition (avec n) et créer une partition primaire (avec p) qui prend la totalité du disque, certaines valeurs sont laissées par défaut. 
+
+![vmware_Q0HphtnNvo.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_Q0HphtnNvo.png)
+
+Ensuite, modifier le type de la partition (avec t) en RAID Linux auto.  
+
+Toujours dans l'utilitaire, taper **L** pour obtenir la liste des différents types de partition, dans le cas d'une partition de type RAID Linux auto, taper **fd** :  
+
+![vmware_4SIwHiMqzJ.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_4SIwHiMqzJ.png)
 
 
 
