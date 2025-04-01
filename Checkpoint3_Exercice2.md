@@ -336,4 +336,4 @@ mm:dd:hh ip
 9. 
 10. 
 
-Rien dans le fichier /var/log/atuh.log, rien dans les fichiers logs bareos présents dans le dossier /var/log/bareos/... .
+Rien dans le fichier /var/log/auth.log, rien dans les fichiers logs bareos présents dans le dossier /var/log/bareos/... .
