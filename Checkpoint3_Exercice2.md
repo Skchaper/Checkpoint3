@@ -117,11 +117,7 @@ Consulter les informations dans le fichier /etc/fstab :
 nano /etc/fstab
 ```
 
-Le disque **/dev/sda1** utilise un système de fichier **linux_**.  
-
 La partition **md0p1** utilise un système de fichier **ext2**.  
-
-La partition **md0p5** utilise un système de fichier **LVM2_m**.  
 
 La partition **cp3--vg-root** sous md0p5 utilise un système de fichier **ext4**.  
 
