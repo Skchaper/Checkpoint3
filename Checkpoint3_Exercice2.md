@@ -363,7 +363,7 @@ nft add rule Bareos input tcp dport 9103 accept
 nft list table ip Bareos
 ```
 
-![]()
+![VirtualBoxVM_cRxBwihhfA.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/VirtualBoxVM_cRxBwihhfA.png)
 
 Supprimer les règles en double :  
 
