@@ -274,7 +274,13 @@ et ajouter la ligne : /dev/mvg/Vol1 /var/lib/bareos/storage ext4 defaults 0 0
 
 **Q.2.3.5** Combien d'espace disponible reste-t-il dans le groupe de volume ?
 
-?????
+Il reste 1,7 Go d'espace disponible dans le groupe de volume.  
+
+> Physical volume (PV) : 7,5 Go  
+> Volumes group (VGs) existants : 2,8 Go + 1 Go  
+> Nouveau Volume Group (VG) : 2 Go  
+> PV - ( VGs + VG ) = Espace Disponible  
+> 7,5 - ((2,8 + 1) + 2) = 1,7 Go  
 
 ## Partie 4 : Sauvegardes
 Le logiciel bareos est installé sur le serveur.  
