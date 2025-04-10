@@ -296,19 +296,20 @@ Bareos permet d'effectuer des sauvegardes sur différents types de supports (ban
 **Q.2.5.1** Quelles sont actuellement les règles appliquées sur Netfilter ?  
 
 ```
-nft list tables
+nano nftables/config.nft
 ```
 
-![]()
+![VirtualBoxVM_KIwqapYBkG.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/VirtualBoxVM_KIwqapYBkG.png)
 
+Le pare-feu autorise les communications ICMP, ICMPV6, SSH (sans port car le pare-feu n'autorise que les communications qui correspont à une connexion TCP déjà établies manuellement).  
 
 **Q.2.5.2** Quels types de communications sont autorisées ?  
 
-?????
+La ligne **ct state established, related accept** indique au pare-feu qu'il peut accepter tous les paquets qui correspondent à une connexion TCP déjà établie. Les communications 
 
 **Q.2.5.3** Quels types sont interdit ?  
 
-?????
+La ligne **ct state invalid drop** indique au pare-feu qu'un paquet sans état et ne pouvant être rattaché à une connexion déjà connue est interdit.
 
 **Q.2.5.4** Sur nftables, ajouter les règles nécessaires pour autoriser bareos à communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.  Rappel : Bareos utilise les ports TCP 9101 à 9103 pour la communication entre ses différents composants.
 
