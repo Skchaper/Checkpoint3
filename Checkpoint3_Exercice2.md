@@ -318,13 +318,11 @@ nft list tables
 nft add table ip Bareos
 ```
 
-![]()
-
 ```
 nft list tables
 ```
 
-![]()
+![VirtualBoxVM_Epcq3sQrgF.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/VirtualBoxVM_Epcq3sQrgF.png)
 
 La nouvelle table est créée.
 
@@ -342,7 +340,7 @@ nft add chain ip Bareos output {type filter hook output priority 0\;}
 nft list table ip Bareos
 ```
 
-![]()
+![VirtualBoxVM_xcZBmbPo4X.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/VirtualBoxVM_xcZBmbPo4X.png)
 
 **Création de la règle :** 
 
