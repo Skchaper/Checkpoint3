@@ -309,7 +309,7 @@ La ligne **ct state established, related accept** indique au pare-feu qu'il peut
 
 **Q.2.5.3** Quels types sont interdit ?  
 
-La ligne **ct state invalid drop** indique au pare-feu qu'un paquet sans état et ne pouvant être rattaché à une connexion déjà connue est interdit.
+La ligne **ct state invalid drop** indique au pare-feu qu'un paquet sans état et ne pouvant être rattaché à une connexion TCP déjà connue est interdit.
 
 **Q.2.5.4** Sur nftables, ajouter les règles nécessaires pour autoriser bareos à communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.  Rappel : Bareos utilise les ports TCP 9101 à 9103 pour la communication entre ses différents composants.
 
