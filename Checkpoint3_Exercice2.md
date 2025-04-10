@@ -20,14 +20,13 @@ usermod -aG sudo skchaper
 
 **Q.2.1.2** Quelles préconisations proposes-tu concernant ce compte ?
 
-?????
-
+Créer un mot de passe robuste pour l'utilisateur. 8 caractères minimum, majuscule(s), minuscule(s), chiffres, caractères spéciaux.  
 
 ## Partie 2 : Configuration de SSH
-Un serveur SSH est lancé sur le port par défaut.
-Il est possible de s'y connecter avec n'importe quel compte, y compris le compte root.
+Un serveur SSH est lancé sur le port par défaut.  
+Il est possible de s'y connecter avec n'importe quel compte, y compris le compte root.  
 
-**Q.2.2.1** Désactiver complètement l'accès à distance de l'utilisateur root.
+**Q.2.2.1** Désactiver complètement l'accès à distance de l'utilisateur root.  
 
 Editer le fichier sshd_config à l'emplacement /etc/ssh/sshd_config :
 ```
