@@ -301,11 +301,9 @@ nano nftables/config.nft
 
 ![VirtualBoxVM_KIwqapYBkG.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/VirtualBoxVM_KIwqapYBkG.png)
 
-Le pare-feu autorise les communications ICMP, ICMPV6, SSH (sans port car le pare-feu n'autorise que les communications qui correspont à une connexion TCP déjà établies manuellement).  
-
 **Q.2.5.2** Quels types de communications sont autorisées ?  
 
-La ligne **ct state established, related accept** indique au pare-feu qu'il peut accepter tous les paquets qui correspondent à une connexion TCP déjà établie. Les communications 
+La ligne **ct state established, related accept** indique au pare-feu qu'il peut accepter tous les paquets qui correspondent à une connexion TCP déjà établie. Les communications ICMP, ICMPV6, SSH et la boucle locale sont autorisées.
 
 **Q.2.5.3** Quels types sont interdit ?  
 
