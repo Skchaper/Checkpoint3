@@ -345,29 +345,25 @@ nft list table ip Bareos
 
 ```
 nft add rule Bareos input tcp dport 9101 accept
-nft add rule Bareos output tcp dport 9101 accept
 ```
 
 ```
 nft add rule Bareos input tcp sport 9101 accept
-nft add rule Bareos output tcp sport 9101 accept
 ```
 
 ```
 nft add rule Bareos input tcp dport 9103 accept
-nft add rule Bareos output tcp dport 9103 accept
 ```
 
 ```
 nft add rule Bareos input tcp dport 9103 accept
-nft add rule Bareos output tcp dport 9103 accept
 ```
 
 ```
 nft list table ip Bareos
 ```
 
-![VirtualBoxVM_DBKBSY2Gqi.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/VirtualBoxVM_DBKBSY2Gqi.png)
+![]()
 
 Supprimer les règles en double :  
 
