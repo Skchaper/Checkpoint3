@@ -299,22 +299,88 @@ Bareos permet d'effectuer des sauvegardes sur différents types de supports (ban
 nft list tables
 ```
 
-![vmware_heLRg2ahUK.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/vmware_heLRg2ahUK.png)
+![]()
 
-Le résultat de la commande indique qu'il n'existe aucune table et donc aucune règle appliquée à Netfilter.  
 
 **Q.2.5.2** Quels types de communications sont autorisées ?  
 
-En l'absence de table et de règle. La règle par défaut de Netfilter s'applique et laisse passer tout le traffic.  
+?????
 
 **Q.2.5.3** Quels types sont interdit ?  
 
-Aucun type n'est interdit.  
+?????
 
-**Q.2.5.4** Sur nftables, ajouter les règles nécessaires pour autoriser bareos à communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.  
+**Q.2.5.4** Sur nftables, ajouter les règles nécessaires pour autoriser bareos à communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.  Rappel : Bareos utilise les ports TCP 9101 à 9103 pour la communication entre ses différents composants.
 
-????
+**Création de table :**  
 
+```
+nft add table ip Bareos
+```
+
+![]()
+
+```
+nft list tables
+```
+
+![]()
+
+La nouvelle table est créée.
+
+**Création de chaînes :**  
+
+```
+nft add chain ip Bareos input {type filter hook input priority 0\;}
+```
+
+```
+nft add chain ip Bareos output {type filter hook output priority 0\;}
+```
+
+```
+nft list table ip Bareos
+```
+
+![]()
+
+**Création de la règle :** 
+
+```
+nft add rule Bareos input tcp dport 9101 accept
+nft add rule Bareos output tcp dport 9101 accept
+```
+
+```
+nft add rule Bareos input tcp sport 9101 accept
+nft add rule Bareos output tcp sport 9101 accept
+```
+
+```
+nft add rule Bareos input tcp dport 9103 accept
+nft add rule Bareos output tcp dport 9103 accept
+```
+
+```
+nft add rule Bareos input tcp dport 9103 accept
+nft add rule Bareos output tcp dport 9103 accept
+```
+
+```
+nft list table ip Bareos
+```
+
+![VirtualBoxVM_DBKBSY2Gqi.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/VirtualBoxVM_DBKBSY2Gqi.png)
+
+Supprimer les règles en double :  
+
+```
+nft -a list table ip Bareos
+```
+
+```
+nft delete rule <nom> <output/input> handle <N°>
+```
 
 ## Partie 6 : Analyse de logs
 
