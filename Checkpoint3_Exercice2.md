@@ -396,3 +396,13 @@ mm:dd:hh ip
 10. 
 
 Rien dans le fichier /var/log/auth.log, rien dans les fichiers logs bareos présents dans le dossier /var/log/bareos/... .
+
+```
+cd /etc/ssh
+```
+
+```
+journalctl _SYSTEMD_UNIT=ssh.service | egrep "Failed|Failure" 
+```
+
+![VirtualBoxVM_vQ5D849BgJ.png](https://github.com/Skchaper/Checkpoint3/blob/main/Screens/EXO2/VirtualBoxVM_vQ5D849BgJ.png)
