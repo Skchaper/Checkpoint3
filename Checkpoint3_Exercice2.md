@@ -379,23 +379,20 @@ nft delete rule <nom> <output/input> handle <N°>
 
 **Q.2.6.1** Lister les 10 derniers échecs de connexion ayant eu lieu sur le serveur en indiquant pour chacun :  
 
-La date et l'heure de la tentative  
-L'adresse IP de la machine ayant fait la tentative  
+La date et l'heure de la tentative  /  L'adresse IP de la machine ayant fait la tentative.  
 
-mm:dd:hh ip
+     mm:dd:hh   ip  
 
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
-9. 
-10. 
-
-Rien dans le fichier /var/log/auth.log, rien dans les fichiers logs bareos présents dans le dossier /var/log/bareos/... .
+1.   12:20:10   10.0.0.199  
+2.   01:03:11   10.0.0.199  
+3.   01:03:11   10.0.0.199  
+4.   01:03:11   10.0.0.199  
+5.   01:03:11   10.0.0.199  
+6.   01:03:11   10.0.0.199  
+7.   01:03:11   10.0.0.199  
+8.   01:03:11   fd26:ba41:c8d6:0:ba92:6393:cc55:8b8d  
+9.   01:03:11   fd26:ba41:c8d6:0:ba92:6393:cc55:8b8d  
+10.    
 
 ```
 cd /etc/ssh
