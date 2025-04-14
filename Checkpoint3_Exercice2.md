@@ -357,7 +357,7 @@ nft add rule Bareos input tcp dport 9103 accept
 ```
 
 ```
-nft add rule Bareos input tcp dport 9103 accept
+nft add rule Bareos input tcp sport 9103 accept
 ```
 
 ```
